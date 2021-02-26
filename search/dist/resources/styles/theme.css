@@ -1,0 +1,153 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+button, a.button {
+	cursor: pointer;
+	background-color: #009fdf;
+	border: 0;
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+}
+
+button:hover, a.button:hover {
+	background-color: #003c71;
+	color: #fff;
+}
+
+a {
+	color: #009fdf;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #666;
+}
+
+.box {
+	background-color: #eee;
+	box-shadow: 6px 6px 2px 1px #ddd;
+}
+
+.box button {
+	width: 100%;
+}
+
+.spec label {
+	color: #888;
+}
+
+.error label {
+	color: #f00;
+}
+
+.side-bar {
+	background-color: #333;
+	color: #fff;
+}
+
+.side-bar .header {
+	background-color: #333;
+}
+
+.side-bar .header .logo {
+	border: 1px solid #fff;
+}
+
+.user-bar {
+	background-color: #333;
+	color: #fff;
+}
+
+.user-bar a {
+	color: #fff;
+}
+
+.side-bar .sections a {
+	color: #fff;
+	font-weight: normal;
+}
+
+.side-bar .sections a.router-link-active {
+	background-color: #ddd;
+	color: #444;
+}
+
+.content .section h1, .content .section h3 {
+	background-color: #eee;
+	padding: 10px;
+}
+
+table.data thead {
+	font-weight: bold;
+	border-bottom: 5px solid #00BCB5;
+}
+
+table.data th.order {
+	color: #00BCB5;
+}
+
+.list table.data tbody tr:nth-child(even) {
+	background-color: #eee;
+}
+
+.list table.data tbody tr:hover {
+	background-color: #999;
+	color: #fff;
+}
+
+.info {
+	color: #aaa;
+}
+
+.form .mandatory {
+	color: #f00;
+}
+
+.form input[type='text'], .form input[type='password'], .form select {
+	border: 1px solid #ccc;
+}
+
+.field.field-error label, .error-message {
+	color: #f00;
+}
+
+.field.field-error input {
+	border-color: #f00;
+}
+
+.tabs li {
+	border-bottom: 5px solid #ddd;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+
+.tabs li.active {
+	border-bottom: 5px solid #00BCB5;
+	color: #00BCB5;
+}
+
+.action-delete {
+	color: #ff6666;
+}
+
+.format {
+	color: #aaa;
+}
+
+.dialog-mask {
+	background-color: #000;
+	opacity: 0.8;
+}
+
+.dialog {
+	background-color: #fff;
+}
+
+.action-message {
+	background-color: #e5ffd4;
+	color: #33844d;
+}

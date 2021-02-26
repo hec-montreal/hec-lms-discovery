@@ -1,0 +1,27 @@
+Bouton pour retirer les filtres
+	-- Permettre plusieurs filtres à la fois (connecteur : et)
+	-- Le tri devrait trier immédiatement à la sélection
+	-- Quand on modifie la recherche principale et retourne à la recherche avancée, Les critères de recherche de l’ancienne recherche sont toujours là. 
+	-- Dans recherche avancée, ne pas mettre la langue par défaut (ou ajouter « Toutes » comme choix par défaut.
+
+A l’affichage des résultats, mettre les auteurs en ordre alphabétique.
+
+
+ 
+
+ 
+
+A corriger dans ZoneCours :
+
+
+	
+Est-ce qu’on peut ouvrir la fenêtre plus grande?
+	
+	
+Importer tous les auteurs             
+	
+	
+	
+ Importer tous les numéros ISBN
+	
+	Changer ce libellé (Retour à la recherche) :

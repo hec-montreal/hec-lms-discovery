@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info">
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%date{dd-MM-yyyy HH:mm:ss.SSS} %p [hec-lms-discovery-ws] %msg %ex %n" />
+		</Console>
+
+		<RollingFile name="File" filename="${sys:catalina.base}/logs/fondation.log" filePattern="${sys:catalina.base}/logs/hec-lms-discovery-ws-%d{yyyy-MM-dd}.log">
+			<PatternLayout pattern="%date{dd-MM-yyyy HH:mm:ss.SSS} %p [hec-lms-discovery-ws] %msg %ex %n" />
+
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1" />
+			</Policies>
+		</RollingFile>
+	</Appenders>
+	
+	<Loggers>
+		<Logger name="ca.hec.zcd" level="trace">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="File" />
+		</Logger>
+		
+		<Root level="info">
+			<AppenderRef ref="Console"/>
+			<AppenderRef ref="File" />
+		</Root>
+	</Loggers>
+</Configuration>

@@ -1,0 +1,86 @@
+<config>
+
+  <metasearch-baseurl></metasearch-baseurl>
+  <metasearch-username></metasearch-username>
+  <metasearch-password></metasearch-password>
+  <metasearch-baseurl></metasearch-baseurl>
+  
+  <!-- Repository OSID implementation to use -->
+  <!--    edu.indiana.lib.osid.base.repository.http (Sirsi SingleSearch, 360 Search) -->
+  <!--    org.sakaibrary.osid.repository.xserver    (Ex Libris MetaLib)  -->
+  <!--    org.sakaiquebec.osid.repository.z3950  (Z39.50) -->
+
+  <osid-impl>org.sakaiquebec.osid.repository.z3950</osid-impl>
+
+  <library-search-enabled>false</library-search-enabled><!--SAKAI-2663-->
+
+  <z3950library-search-enabled>false</z3950library-search-enabled>
+  <google-scholar-enabled>false</google-scholar-enabled>
+
+  <!-- Extended Repository ID -->
+  <!--    360 Search Repository    (Serials Solutions 360 Search) -->
+  <!--    MusePeer Repository      (Sirsi SingleSearch - MusePeer API) -->
+  <!--    Web2 Repository          (Sirsi SingleSearch - Web2 Bridge API)  -->
+  <!--    Z39.50                   (Z39.50             - Z39.50 api) -->
+  <!--    *none specified*         (All other repositories) -->
+  <!-- -->
+  <extended-repository-id>Z3950</extended-repository-id>
+
+  <!-- -->
+  <!-- Maximum number of databases a user can search at one time.  Defaults -->
+  <!-- to eight (the maximum for ExLibris and Sirsi) if no value is provided -->
+  <!-- -->
+  <searchable-databases>30</searchable-databases>
+
+  <!-- Google Scholar URL and Sakai server name -->
+  <google-baseurl>http://scholar.google.com/schhp</google-baseurl>
+  <sakai-serverkey></sakai-serverkey>
+
+  <!-- OpenUrl Resolver to use -->
+  <!--    Use your local resolver URL (if you're running a resolver) -->
+  <!--    http://worldcatlibraries.org/registry/gateway (if you've registered) -->
+
+  <!-- Configuration - HEC-->
+  <openurl-resolveraddress>http://kk9fd4ag5g.search.serialssolutions.com</openurl-resolveraddress>
+  <openurl-label>Accès au document</openurl-label> 
+  <libraryurl-resolveraddress>https://elib.hec.ca/uhtbin/cgisirsi/x/0/0/5?srchfield1=GENERAL^SUJET^SUJETS^mot_cl%C3%A9&amp;searchdata1=</libraryurl-resolveraddress>
+
+<!-- Configuration of the Z39.50 connection - HEC -->
+<!--
+  <z3950-database>Bibliotheque Myriam et J.-Robert Ouimet</z3950-database>
+  <z3950-hostAddress>balzac.hec.ca</z3950-hostAddress>
+  <z3950-portNumber>2200</z3950-portNumber>
+  <z3950-serverName>Unicorn</z3950-serverName>
+-->
+
+  <map id="saveciteClients">
+    <entry>
+      <string>fr</string>
+      <list><map>
+        <entry><string>id</string><string>summon-search</string></entry>
+        <entry><string>searchurl_base</string><string>//appjavadev.hec.ca/hec-lms-discovery-search/</string></entry>
+        <entry><string>linkurl_id</string><string>zonecours.hec.ca</string></entry>
+        <entry><string>searchurl_label</string><string>Chercher dans la bibliothèque HEC</string></entry>
+        <entry><string>searchurl_description</string><string>Recherche dans le catalogue de la bibliothèque, ainsi que dans les banques de données auxquelles la bibliothèque est abonnée.</string></entry>
+        <entry><string>return_label</string><string>Retour à la recherche</string></entry>
+        <entry><string>close_label</string><string>Fermer la fenêtre</string></entry>
+        <entry><string>window_width</string><string>1000</string></entry>
+        <entry><string>window_height</string><string>800</string></entry>
+      </map></list>
+    </entry>
+    <entry>
+      <string>en</string>
+      <list><map>
+        <entry><string>id</string><string>summon-search</string></entry>
+        <entry><string>searchurl_base</string><string>//appjavadev.hec.ca/hec-lms-discovery-search/</string></entry>
+        <entry><string>linkurl_id</string><string>zonecours.hec.ca</string></entry>
+        <entry><string>searchurl_label</string><string>Search in HEC's library</string></entry>
+        <entry><string>searchurl_description</string><string>Search in the library's catalogue and the journal databases to which HEC Montréal is subscribed.</string></entry>
+        <entry><string>return_label</string><string>Back to search</string></entry>
+        <entry><string>close_label</string><string>Close</string></entry>
+        <entry><string>window_width</string><string>1000</string></entry>
+        <entry><string>window_height</string><string>800</string></entry>
+      </map></list>
+    </entry>
+  </map>
+</config>

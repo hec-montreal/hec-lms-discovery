@@ -1,0 +1,31 @@
+{
+  "name": "hec-lms-discovery-search",
+  "version": "1.0.0",
+  "description": "HEC LMS Discovery Search",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "dev": "npx webpack --config webpack.config.js",
+    "dev-local": "npx webpack --config webpack.config.js --watch",
+    "prod": "npx webpack --config webpack.prod.config.js"
+  },
+  "author": "HEC Montréal",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.8.2",
+    "babel-polyfill": "^6.26.0",
+    "jquery": "^3.4.1",
+    "url-search-params-polyfill": "^7.0.1",
+    "vue": "^2.6.10",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-es2015-shorthand-properties": "^6.24.1",
+    "css-loader": "^3.2.1",
+    "vue-loader": "^15.7.2",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-merge": "^4.2.2"
+  }
+}

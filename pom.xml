@@ -1,0 +1,25 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	
+	<modelVersion>4.0.0</modelVersion>
+	
+	<groupId>ca.hec</groupId>
+	<artifactId>hec-lms-discovery</artifactId>
+	<packaging>pom</packaging>
+	
+	<version>1.0</version>
+	
+	<name>hec-lms-discovery</name>
+	<url>https://hec.ca</url>
+	
+	<modules>
+		<module>hec-web</module>
+		<module>web-services</module>
+		<module>search</module>
+	</modules>
+	
+	<dependencies>
+
+	</dependencies>
+</project>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p" xmlns:jee="http://www.springframework.org/schema/jee" xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context" xmlns:util="http://www.springframework.org/schema/util" xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+			               http://www.springframework.org/schema/context   http://www.springframework.org/schema/context/spring-context-3.0.xsd
+			               http://www.springframework.org/schema/jee       http://www.springframework.org/schema/jee/spring-jee.xsd
+			               http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+			               http://www.springframework.org/schema/aop       http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+			               http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd
+			               http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+	
+	<!-- Support pour les annotations Spring (@RequestMapping, @Controller, @ResponseBody) -->
+	<mvc:annotation-driven />
+
+	<!-- Support pour les annotations de transactions (@Transactional) -->
+	<tx:annotation-driven />
+
+	<!-- Mapping des controlleurs -->
+	<context:component-scan base-package="ca.hec.zcd.ws.controller" />
+
+	<!-- Mapping des resources web -->
+	<mvc:resources mapping="/resources/**" location="/resources/" />
+
+	<!-- Locale resolver -->
+	<bean id="localeResolver" class="org.springframework.web.servlet.i18n.SessionLocaleResolver">
+		<property name="defaultLocale" value="fr" />
+	</bean>
+
+	<!-- Message source -->
+	<bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<property name="basenames">
+			<list>
+				<value>/WEB-INF/i18n/messages</value>
+			</list>
+		</property>
+
+		<property name="defaultEncoding" value="UTF-8" />
+
+		<property name="fallbackToSystemLocale" value="false" />
+	</bean>
+
+	<!-- ApplicationProperties -->
+	<bean id="applicationProperties" class="ca.hec.zcd.ws.configuration.ApplicationProperties">
+		<constructor-arg name="name" value="hec-lms-discovery-web-services.properties" />
+	</bean>
+	
+	<!-- Logging -->
+
+	<!-- Job -->
+
+</beans>

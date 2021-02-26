@@ -1,0 +1,17 @@
+# Editor
+.settings/
+*.classpath
+*.project
+*.sublime-workspace
+*.sublime-project
+
+# Build
+target/
+bundle.js
+
+# Npm
+node_modules/
+package-lock.json
+
+# Other
+logs/
