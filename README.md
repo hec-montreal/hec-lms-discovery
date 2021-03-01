@@ -19,4 +19,4 @@ Application Java qui communique avec l'api OCLC. Un fichier properties doit êtr
 
 ### Search
 
-Application Vue.js, un formulaire de recherche qui appelle les web-services et affiche les résultats.
+Application Vue.js, un formulaire de recherche qui appelle les web-services et affiche les résultats. Chaque résultat contient un Open Url destiné à l'import dans le LMS, et un lien direct vers la ressource. Les liens vers worldcat sont préfixés par l'institution (configuré dans Resource.java).
